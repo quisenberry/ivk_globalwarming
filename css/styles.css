@@ -1,0 +1,30 @@
+/** GLOBAL **/
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+.content{
+    width: 768px;
+    height: 1366px;
+    margin: 0 auto;
+}
+
+.hitbox{
+    border: solid 1px red;
+}
+
+body.page1 .content{
+}
+
