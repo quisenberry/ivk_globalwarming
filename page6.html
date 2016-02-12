@@ -8,18 +8,36 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="/css/jquery.fancybox.css" type="text/css">
         <!-- JS -->
         <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+        
     </head>
     <body class="page1">
         <div id="content" class="content">
             <img  id="content-image" src="/images/page6/bg.png" alt="" usemap="#map">
             <map name="map" id="map">
                 <area alt="" title="" href="index.html" shape="rect" coords="17,17,165,113">
-                <area alt="" title="" href="/page7.html" shape="rect" coords="547,19,757,110" />
+                <area alt="" title="" href="/page7.html" shape="rect" coords="547,19,757,110">
+                <area alt="" title="" href="/quiz.html" shape="rect" coords="80,172,693,557">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/1.jpg" shape="rect" coords="386,580,706,726">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/2.jpg" shape="rect" coords="77,729,386,876">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/3.jpg" shape="rect" coords="388,731,697,874">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/4.jpg" shape="rect" coords="76,880,384,1023">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/5.jpg" shape="rect" coords="388,878,700,1024">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/6.jpg" shape="rect" coords="74,1032,384,1174">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/7.jpg" shape="rect" coords="388,1031,696,1173">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/8.jpg" shape="rect" coords="75,1180,385,1323">
+                <area alt="" title="" class="fancybox" rel="group" href="/images/page6/critters/9.jpg" shape="rect" coords="385,1179,698,1324">
             </map>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                    $(".fancybox").fancybox();
+            });
+        </script>
     </body>
 </html>
