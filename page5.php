@@ -4,6 +4,8 @@ $html = getHTML($link_remoteurl);
 if($html){
     $link1 = getlink('ctl00$ContentPlaceHolder1$PublicPagePlaceholder$PageUserControl$ctl00$UserControl1$_diagram', 'src="', $html);
     $link2 = getlink('ctl00$ContentPlaceHolder1$PublicPagePlaceholder$PageUserControl$ctl00$UserControl2$_diagram', 'src="', $html);
+    $link3 = getlink('<span id="ctl00_ContentPlaceHolder1_PublicPagePlaceholder_PageUserControl_ctl00_UserControl0_LabelCO2Value" class="base-label"','>',$html,'</span>');
+    file_put_contents(dirname(__FILE__).'/temp/co2.txt', $link3);
     getImage('https://www.sunnyportal.com'.$link1, 'image1.png');
     getImage('https://www.sunnyportal.com'.$link2, 'image2.png');
 }
@@ -115,15 +117,15 @@ function getImage($url, $image){
             
             #image3{
                 position: absolute;
-                top :400px;
-                left: 30px;
+                top :562px;
+                left: 102px;
             }
         </style>
     </head>
     <body class="page1">
         <div id="content" class="content">
             <img  id="content-image" src="/images/page5/bg.png" alt="" usemap="#map">
-            <img id="image3" src="/images/page5/Ertrag_ani.gif">
+            <div id="image3"><strong>CO2 Avoided: <?php echo $link3 ?></strong></div>
             <img id="image1" src="/temp/image1.png">
             <img id="image2" src="/temp/image2.png">
             <map name="map" id="map">
